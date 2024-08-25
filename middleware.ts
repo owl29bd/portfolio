@@ -34,7 +34,12 @@ type RedirectEntry = {
     destination: string
     permanent: boolean
   }
-   
+
+  /**
+   * Creating and storing a redirect map
+   * @param request 
+   * @returns 
+   */
 export async function middleware_scalable(request: NextRequest) {
     const pathname = request.nextUrl.pathname
     const redirectData = await get(pathname)
