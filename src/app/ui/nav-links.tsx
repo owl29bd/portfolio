@@ -8,11 +8,13 @@ export function NavLinks() {
 
   return (
     <nav>
+      {/* checking active links */}
       <Link className={`link ${pathname === "/" ? "active" : ""}`} href="/">
         Home
       </Link>
 
       <Link
+        // checking active links
         className={`link ${pathname === "/about" ? "active" : ""}`}
         href="/about"
       >
